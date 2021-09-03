@@ -1,9 +1,23 @@
 import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
-import { Helmet } from 'react-helmet'
+import { Helmet } from 'react-helmet';
 
-import "@fontsource/roboto"
-import "./index.scss"
+import "@fontsource/roboto/100.css";
+import "@fontsource/roboto/100-italic.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/400-italic.css";
+import "@fontsource/roboto/800.css";
+import "@fontsource/roboto/800-italic.css";
+import "@fontsource/roboto/900.css";
+import "@fontsource/roboto/900-italic.css";
+import "@fontsource/roboto/700.css";
+import "@fontsource/roboto/700-italic.css";
+import "@fontsource/roboto/600.css";
+import "@fontsource/roboto/600-italic.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/500-italic.css";
+
+import "./index.scss";
 
 import List from '../components/List';
 import Skills from '../components/list/Skills';
