@@ -2,8 +2,8 @@ import * as React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { Helmet } from 'react-helmet'
 
+import "@fontsource/roboto"
 import "./index.scss"
-import "./fonst.scss"
 
 import List from '../components/List';
 import Skills from '../components/list/Skills';
