@@ -1,0 +1,30 @@
+$primary-color: #3978c0;
+$background-color: #ffffff;
+$separator-color: #9b9b9b;
+$link-hover-color: #e5e5e5;
+$side-border-color: #5d90cb;
+$white: #ffffff;
+
+$padding: 1.5rem;
+$name-padding: 1.5rem 0 1rem 0;
+$name-margin: 0;
+$block-name-size: 1.3rem;
+$big-font-size: 1rem;
+$normal-font-size: 0.9rem;
+$small-font-size: 0.8rem;
+
+:export {
+  primaryColor: $primary-color;
+  backgroundColor: $background-color;
+  separatorColor: $separator-color;
+  linkHoverColor: $link-hover-color;
+  sideBorderColor: $side-border-color;
+  padding: $padding;
+  white: $white;
+  namePadding: $name-padding;
+  nameMargin: $name-margin;
+  blockNameSize: $block-name-size;
+  bigFontSize: $big-font-size;
+  normalFontSize: $normal-font-size;
+  smallFontSize: $small-font-size;
+}

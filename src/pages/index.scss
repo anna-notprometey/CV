@@ -1,0 +1,150 @@
+@import "variables.module";
+
+html, body, #___gatsby {
+  height: 100%;
+}
+
+#___gatsby > * {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  background-color: $background-color;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas: "header content content";
+
+  .aside {
+    background: $primary-color;
+    color: $white;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 250px);
+    grid-auto-rows: minmax(min-content, max-content);
+
+    padding: 20px 0 20px 20px;
+
+    &__block {
+      grid-column: 2;
+      margin-bottom: 30px;
+    }
+
+    @media print {
+      color: #000000;
+
+      a {
+        color: #000000;
+      }
+
+      & > * {
+        margin-bottom: 0;
+        border-right: 2px solid $side-border-color;
+      }
+    }
+  }
+
+  .main {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 200px));
+    grid-template-areas: "header header avatar" "experience experience experience" "education education education" "achievements achievements achievements";
+
+    padding: 20px;
+
+    & > *:not(:last-child) {
+      border-bottom: 1px solid $separator-color;
+      padding-bottom: 30px;
+    }
+
+    & > *:last-child {
+      padding-bottom: 80px;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .avatar {
+      grid-area: avatar;
+      padding-bottom: 0;
+    }
+
+    .experience {
+      grid-area: experience;
+    }
+
+    .education {
+      grid-area: education;
+    }
+
+    .achievements {
+      grid-area: achievements;
+    }
+  }
+
+  .follow {
+    display: none;
+    z-index: 100;
+  }
+
+  @media screen and (max-width: 768px) {
+    .follow {
+      display: block;
+      position: sticky;
+      top: 0;
+    }
+
+    .aside {
+      grid-template-columns: 1fr;
+
+      &__block {
+        grid-column: 1;
+      }
+    }
+
+    .aside > div {
+      grid-column: 1
+    }
+
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "experience" "education" "achievements";
+
+      .avatar {
+        display: none;
+      }
+
+      & > *:last-child {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px)  {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas: "follow" "content" "header";
+  }
+
+  .container > div.follow {
+    display: grid;
+    grid-area: follow;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+    & > a {
+      cursor: pointer;
+      padding: 20px 0;
+      color: $white;
+    }
+  }
+}
+
+
