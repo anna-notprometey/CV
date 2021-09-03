@@ -89,7 +89,7 @@ const Name = styled.div`
 
 const Extra = styled.div`
   font-size: ${({ theme }) => theme.normalFontSize};
-  font-weight: 600;
+  font-weight: 700;
 `;
 
 const Place = styled.div`
@@ -99,7 +99,7 @@ const Place = styled.div`
 
 const Date = styled.div`
   font-size: ${({ theme }) => theme.smallFontSize};
-  font-weight: 100;
+  font-weight: 300;
   font-style: italic;
 `;
 
