@@ -1,4 +1,17 @@
 import * as React from 'react';
+import styled from 'styled-components';
+
+const Article = styled.article`
+  font-size: ${({ theme }) => theme.bigFontSize};
+  
+  @media print {
+    text-align: justify;
+  }
+  
+  @media screen and (max-width: 768px) {
+    text-align: justify;
+  }
+`;
 
 type Props = {
   name: string;
@@ -10,9 +23,9 @@ const Headers = ({ name, article, className }: Props) => {
   return (
     <header className={className}>
       <h1>{name}</h1>
-      <article>
+      <Article>
         {article}
-      </article>
+      </Article>
     </header>
   );
 }

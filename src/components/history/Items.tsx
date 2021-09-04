@@ -47,6 +47,12 @@ const Container = styled.div`
     };
   }
 
+  @media print {
+    ${Article} {
+      text-align: justify;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     padding-left: 15px;
@@ -58,6 +64,10 @@ const Container = styled.div`
     ${Info}:after {
       left: -20px;
     };
+    
+    ${Article} {
+      text-align: justify;
+    }
     
     ${Article}: before {
       content: "\\a0";
@@ -85,16 +95,28 @@ const Container = styled.div`
 const Name = styled.div`
   font-size: ${({ theme }) => theme.bigFontSize};
   font-weight: bolder;
+
+  @media print {
+    font-size: ${({ theme }) => theme.smallFontSize};
+  }
 `;
 
 const Extra = styled.div`
   font-size: ${({ theme }) => theme.normalFontSize};
   font-weight: 700;
+
+  @media print {
+    font-size: ${({ theme }) => theme.smallFontSize};
+  }
 `;
 
 const Place = styled.div`
   font-size: ${({ theme }) => theme.normalFontSize};
   font-weight: 400;
+
+  @media print {
+    font-size: ${({ theme }) => theme.smallFontSize};
+  }
 `;
 
 const Date = styled.div`

@@ -12,6 +12,10 @@ const Name = styled.div`
 const Level = styled.div`
   font-size: ${({ theme }) => theme.normalFontSize};
   font-weight: 100;
+
+  @media print {
+    font-weight: 300;
+  }
 `;
 
 type Language = {

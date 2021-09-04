@@ -29,7 +29,7 @@ body {
     grid-template-columns: 1fr minmax(0, 265px);
     grid-auto-rows: minmax(min-content, max-content);
 
-    padding: 20px 0 20px 20px;
+    padding: 1.3rem 0 1.3rem 1.3rem;
 
     &__block {
       grid-column: 2;
@@ -45,7 +45,7 @@ body {
 
       & > * {
         margin-bottom: 0;
-        border-right: 2px solid $side-border-color;
+        border-right: 2px solid black;
       }
     }
   }
@@ -56,7 +56,7 @@ body {
     grid-template-columns: repeat(3, minmax(0, 200px));
     grid-template-areas: "header header avatar" "experience experience experience" "education education education" "achievements achievements achievements";
 
-    padding: 20px;
+    padding: 1.3rem;
 
     & > *:not(:last-child) {
       border-bottom: 1px solid $separator-color;
@@ -94,6 +94,17 @@ body {
     z-index: 100;
   }
 
+  @media print {
+    .main {
+      grid-template-columns: 1fr;
+      grid-template-areas: "header" "experience" "education" "achievements";
+
+      .avatar {
+        display: none;
+      }
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .follow {
       display: block;
@@ -104,18 +115,23 @@ body {
     .aside {
       grid-template-columns: 1fr;
 
+      padding: 2rem 0 2rem 2rem;
+
       &__block {
         grid-column: 1;
+        margin-bottom: 0;
       }
     }
 
     .aside > div {
-      grid-column: 1
+      grid-column: 1;
     }
 
     .main {
       grid-template-columns: 1fr;
       grid-template-areas: "header" "experience" "education" "achievements";
+
+      padding: 1rem 2rem;
 
       .avatar {
         display: none;

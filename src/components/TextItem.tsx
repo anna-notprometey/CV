@@ -8,6 +8,14 @@ const Name = styled.h2`
   text-transform: uppercase;
 `;
 
+const Text = styled.div`
+  font-size: ${({ theme }) => theme.bigFontSize};
+`;
+
+const Link = styled.a`
+  font-size: ${({ theme }) => theme.bigFontSize};
+`;
+
 const Container = styled.div`
   padding-left: 0;
 `;
@@ -25,8 +33,8 @@ const TextItem = ({ name, text, links, className }: Props) => {
       <Name>{name}</Name>
 
       <Container>
-        {!!links?.length && links.map(({ href, text }) => (<a key={href} rel="noopener" href={href} target="_blank">{text}</a>))}
-        <div>{text}</div>
+        {!!links?.length && links.map(({ href, text }) => (<Link key={href} rel="noopener" href={href} target="_blank">{text}</Link>))}
+        <Text>{text}</Text>
       </Container>
     </section>
   );

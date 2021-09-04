@@ -9,6 +9,10 @@ const List = styled.ul`
 const ListItem = styled.li`
   margin-bottom: 0.2rem;
   font-size: ${({ theme }) => theme.normalFontSize};
+
+  @media print {
+    font-weight: 300;
+  }
 `;
 
 type Props = {

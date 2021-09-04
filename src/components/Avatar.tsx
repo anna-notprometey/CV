@@ -11,26 +11,24 @@ const Avatar = ({ className }: Props) => {
       <div style={{
         display: 'flex',
         height: '100%',
+        width: '100%',
+        position: 'relative',
         alignItems: 'center',
         justifyContent: 'center',
       }}>
         <StaticImage
           style={{
-            backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat',
-            backgroundPosition: 'right 32%',
+            paddingTop: '100%',
+            height: 0,
             borderRadius: '100%',
-            width: '100vh',
-            height: '100vh',
-            maxWidth: '150px',
-            maxHeight: '150px',
-            paddingBottom: 0
+            paddingBottom: 0,
           }}
           src="../images/avatar.png"
           alt="Avatar"
           layout="fixed"
-          width={150}
-          height={150}
+          objectFit="contain"
+          width={200}
+          height={200}
         />
       </div>
     </div>

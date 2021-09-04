@@ -78,7 +78,14 @@ module.exports = {
       },
     },
     "gatsby-plugin-offline",
-    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-plugin-sharp",
+      options: {
+        defaults: {
+          quality: 100,
+        }
+      }
+    },
     "gatsby-transformer-sharp",
     {
       resolve: "gatsby-source-filesystem",
