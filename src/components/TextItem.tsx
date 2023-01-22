@@ -13,7 +13,9 @@ const Text = styled.div`
 `;
 
 const Link = styled.a`
-  font-size: ${({ theme }) => theme.bigFontSize};
+  font-size: ${({ theme }) => theme.smallFontSize};
+  margin-bottom: 1rem;
+  display: block;
 `;
 
 const Container = styled.div`
@@ -22,19 +24,17 @@ const Container = styled.div`
 
 type Props = {
   name: string
-  text: string;
   links: { href: string; text: string }[]
   className;
 };
 
-const TextItem = ({ name, text, links, className }: Props) => {
+const TextItem = ({ name, links, className }: Props) => {
   return (
     <section className={className}>
       <Name>{name}</Name>
 
       <Container>
         {!!links?.length && links.map(({ href, text }) => (<Link key={href} rel="noopener" href={href} target="_blank">{text}</Link>))}
-        <Text>{text}</Text>
       </Container>
     </section>
   );

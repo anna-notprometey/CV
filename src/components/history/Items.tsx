@@ -143,7 +143,7 @@ const Tool = styled.div`
 
 type Item = {
   name: string;
-  extra: string;
+  extra?: string;
   place: string;
   date: {
     from: string;

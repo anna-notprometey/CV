@@ -34,14 +34,19 @@ import { faTelegram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPhone, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 
 const skills = [
+  'Test documentation',
+  'DevTools',
+  'Postman',
+  'PostgreSQL',
+  'Android Studio',
+  'Charles',
+  'XML',
+  'JSON',
+  'Jenkins',
+  'Git',
   'JavaScript',
-  'TypeScript',
-  'Node JS',
-  'PHP',
-  'Python',
   'HTML',
   'CSS',
-  'Docker',
   'Learnability',
   'Adaptability',
   'Autonomy',
@@ -50,23 +55,23 @@ const skills = [
 const contacts = [
   {
     name: 'Email',
-    label: 'admin@notprometey.pro',
-    link: 'mailto:admin@notprometey.pro',
+    label: 'anna@notprometey.pro',
+    link: 'mailto:anna@notprometey.pro',
   },
   {
     name: 'Phone',
-    label: '+375336589744',
-    link: 'tel:+375336589744',
+    label: '+375333456145',
+    link: 'tel:+375333456145',
   },
   {
     name: 'Telegram',
-    label: '@notprometey',
-    link: 'https://telegram.me/notprometey',
+    label: '@anna_aslamova',
+    link: 'https://telegram.me/anna_aslamova',
   },
   {
     name: 'LinkedIn',
-    label: '@notprometey',
-    link: 'https://www.linkedin.com/in/notprometey/',
+    label: '@anna-aslamova',
+    link: 'https://www.linkedin.com/in/anna-aslamova/',
   }
 ];
 
@@ -76,56 +81,96 @@ const languages = [
 ];
 
 const header = {
-  name: 'Stepan Telitsyn',
-  text: `Front-end developer with ${new Date().getFullYear() - 2014} years experience look for a company that needs his knowledge and experience to solve interesting and challenging tasks, which will be a good opportunity for further professional development and training`,
+  name: 'Anna Aslamova',
+  text: 'I am conscientious about completing tasks. I readily take on new projects and see them through to the end. I work well in a team, I can resolve conflicts and compromise. I learn quickly and easily.',
 }
 
 const historyItems = [
   {
-    name: 'Web developer',
-    extra: 'Freelance',
-    place: 'Vitebsk, Belarus',
-    date: {
-      from: '01.09.2012',
-      to: '01.06.2015'
-    },
-    text: 'Communication with the customer, development of front and back parts of sites, development of plug-ins for popular CMS, the layout of the layouts, API design, API development and integration',
-    tools: 'PHP, Laravel, CodeIgniter, WordPress, Drupal, Joomla, JS, jQuery',
-  },
-  {
-    name: 'Front-end developer',
-    extra: 'Andersen',
-    place: 'Polotsk, Belarus',
-    date: {
-      from: '01.06.2015',
-      to: '01.05.2016'
-    },
-    text: 'Teamwork, design of high load systems on the backend, development of a module for working with data on the map, development of the frontend of e-commerce, development of the backend and frontend of site builder, code debagging, code refactoring, review code, testing, fixing bugs.',
-    tools: 'JS, jQuery, AngularJS, ReactJS, Gulp, HTML, CSS, Bootstrap, PHP, Yii2, Git',
-  },
-  {
-    name: 'JavaScript developer',
-    extra: 'Scand',
+    name: 'Tester-Assessor',
+    extra: 'Yandex',
     place: 'Minsk, Belarus',
     date: {
-      from: '01.06.2017'
+      from: '01.01.2022',
+      to: '30.04.2022'
     },
-    text: 'Team work, Team management, scrum, development of the frontend of an online store with an internal site builder, development of the backend for the site builder on the node js, server rendering, development of the frontend for car sharing system, development of scandltd/vue-injector package, code debagging, code refactoring, review code, testing, fixing bugs, improving application responsiveness, designing, performance',
-    tools: 'Angular2+, VueJS, Node JS, ReactJS, TS, GraphQL, Flow, HTML, CSS, SCSS Docker, Webpack, Jira, Git, Rest, PHP, Python, Symfony, Yii2, Django, Docket, Material, Scrum, Architecture web applications, @scandltd/vueinjector',
+    text: 'Analysis of documentation, testing Yandex services, the creation of bug reports.',
+    tools: 'Charles, DevTools, Android Studio, Yandex Traker',
+  },
+  {
+    name: 'Student QA Engineer',
+    extra: 'Yandex Practicum',
+    place: 'Minsk, Belarus',
+    date: {
+      from: '25.07.2021',
+      to: '28.11.2021'
+    },
+    text: 'Creating mind maps, checklists, test cases, bug reports, writing test reports. Cross-browser layout testing. Testing the application in the Android Studio emulator. Working with Postman. Testing the database. Test design techniques used: equivalence classes and boundary values, pairwise testing.',
+    tools: 'Postman, PostgreSQL, Swagger, Charles, DevTools, Android Studio, Yandex Traker, bash',
+  },
+  {
+    name: 'Teacher-defectologist',
+    extra: 'School № 4 in Novopolotsk.',
+    place: 'Novopolotsk, Belarus',
+    date: {
+      from: '15.08.2014',
+      to: '13.10.2017'
+    },
+    text: 'Diagnostics of speech and cognitive processes, general education lessons and remedial classes, documentation and reporting, leadership of the methodical association of teachers-defectologists of the school.',
+    tools: '',
   }
 ];
 
 const educationItems = [
   {
-    name: 'Physicist. Engineer',
-    extra: 'Vitebsk State University named after P.M. Masherov',
+    name: 'EPAM Learn',
+    place: 'Online',
+    date: {
+      from: '01.12.2022',
+      to: '01.01.2023'
+    },
+    text: 'Continuous Integration with Jenkins',
+    tools: ['Work with environment.', 'Manage project.', 'Manage pipeline.'],
+  },
+  {
+    name: 'EPAM Learn',
+    place: 'Online',
+    date: {
+      from: '01.08.2022',
+      to: '01.09.2022'
+    },
+    text: 'Version Control with Git',
+    tools: ['VCS concept.', 'Basic commands.'],
+  },
+  {
+    name: 'EPAM Learn',
+    place: 'Online',
+    date: {
+      from: '01.09.2021',
+      to: '01.10.2021'
+    },
+    text: 'Software Testing Introduction',
+    tools: ['Test Planning.', 'Requirements Testing.', 'Defect Reporting.'],
+  },
+  {
+    name: 'Yandex Practicum',
+    place: 'Online',
+    date: {
+      from: '25.07.2021',
+      to: '28.11.2021'
+    },
+    text: 'QA Engineer professional training course',
+    tools: ['QA Theory.', 'Test analysis and design.', 'Web application testing.', 'Mobile App testing.', 'API and database testing.'],
+  },
+  {
+    name: 'Vitebsk State University named after P.M. Masherov',
     place: 'Vitebsk, Belarus',
     date: {
       from: '01.09.2009',
-      to: '01.06.2015'
+      to: '01.06.2014'
     },
-    text: 'Computer Modeling of Physical Processes',
-    tools: ['Introduction to programming.', 'Algorithms and their implementation in C++.', 'Basic web development skills.'],
+    text: 'Oligofreno-pedagogue. Teacher-speech therapist',
+    tools: ['Pedagogy.', 'Diagnostic methods.', 'Social interactions.'],
   }
 ];
 
@@ -133,11 +178,15 @@ const achievements = {
   name: 'Achievements',
   links: [
     {
-      href: 'https://www.npmjs.com/package/@scandltd/vue-injector',
-      text: '@scandltd/vueinjector'
+      href: 'https://drive.google.com/file/d/1K6rzaqyQAIfq84eBuFXszKX7oEeXotGn/view?usp=sharing',
+      text: 'Certificate of Completion of the QA Engineer Professional Training Course'
+    },
+    {
+      href: 'https://drive.google.com/file/d/1YLPiXs-CU9EgQda9qqRXJ-CXKmGnU-eq/view?usp=sharing',
+      text: 'Software Testing: Preparation for Certification ISTQB Foundation'
     }
   ],
-  text: 'Developed VueJs plugin for dependancy injection.'
+  text: ''
 };
 
 const followLinks = [
@@ -152,10 +201,10 @@ const CVPage = () => {
     <ThemeProvider theme={theme}>
       <Helmet
         defer={false}
-        title="Stepan Telitsyn - CV"
+        title="Anna Aslamova - QA engineer CV"
         meta={[
-          { name: 'description', content: 'Stepan Telitsyn CV file' },
-          { name: 'keywords', content: 'CV, Stepan Telitsyn, Stepan, Telitsyn, frontend developer, front-end developer, frontend, front-end, frontend engineer, front-end engineer, senior, senior engineer, senior developer' },
+          { name: 'description', content: 'Anna Aslamova QA engineer CV file' },
+          { name: 'keywords', content: 'CV, Anna Aslamova, QA engineer, testing' },
         ]}
       >
         <html lang="en" />
@@ -163,7 +212,7 @@ const CVPage = () => {
       <div className="container">
         <Follow links={followLinks} className="follow"/>
         <aside className="aside">
-          <List className="aside__block" name="Skills">
+          <List className="aside__block" name="Key Skills and Tolls">
             <Skills skills={skills} />
           </List>
 
@@ -182,7 +231,7 @@ const CVPage = () => {
             <Items items={historyItems} />
           </History>
           <History name="Education" className="education">
-            <Items items={educationItems} format="yyyy" duration={false} />
+            <Items items={educationItems} format="LLL yyyy" duration={false} />
           </History>
           <TextItem className="achievements" name={achievements.name} text={achievements.text} links={achievements.links} />
         </main>
