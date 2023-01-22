@@ -1,6 +1,7 @@
 module.exports = {
+  pathPrefix: "/CV",
   siteMetadata: {
-    siteUrl: `https://cv.notprometey.pro`,
+    siteUrl: `https://anna-notprometey.github.io/CV/`,
   },
   plugins: [
     "gatsby-plugin-react-helmet",

@@ -12,7 +12,8 @@
     "start": "node_modules/.bin/gatsby develop",
     "build": "node_modules/.bin/gatsby build",
     "serve": "node_modules/.bin/gatsby serve",
-    "clean": "node_modules/.bin/gatsby clean"
+    "clean": "node_modules/.bin/gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@fontsource/roboto": "^4.5.0",
@@ -43,5 +44,8 @@
     "react-helmet": "^6.1.0",
     "sass": "^1.39.0",
     "styled-components": "^5.3.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
