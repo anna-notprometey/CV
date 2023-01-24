@@ -26,7 +26,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         "short_name": "CV",
-        "name": "Telitsyn Stepan - CV",
+        "name": "Aslamova Anna - CV",
         "icon": `src/images/icons/icon-128.png`,
         "icons": [
           {

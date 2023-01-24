@@ -82,7 +82,7 @@ const languages = [
 
 const header = {
   name: 'Anna Aslamova',
-  text: 'I am conscientious about completing tasks. I readily take on new projects and see them through to the end. I work well in a team, I can resolve conflicts and compromise. I learn quickly and easily.',
+  text: 'I am conscientious about completing tasks. I readily take on new projects and see them through to the end. I work well in a team, I can resolve conflicts and find compromise. I learn quickly and easily.',
 }
 
 const historyItems = [
@@ -116,7 +116,7 @@ const historyItems = [
       from: '15.08.2014',
       to: '13.10.2017'
     },
-    text: 'Diagnostics of speech and cognitive processes, general education lessons and remedial classes, documentation and reporting, leadership of the methodical association of teachers-defectologists of the school.',
+    text: 'Diagnostics of speech and cognitive processes, general educational lessons and remedial classes, documentation and reporting, leadership of the methodical association of teachers-defectologists of the school.',
     tools: '',
   }
 ];
