@@ -190,10 +190,10 @@ const achievements = {
 };
 
 const followLinks = [
-  { href: 'https://telegram.me/notprometey', icon: faTelegram },
-  { href: 'https://www.linkedin.com/in/notprometey/', icon: faLinkedin },
-  { href: 'mailto:admin@notprometey.pro', icon: faEnvelopeOpen },
-  { href: 'tel:+375336589744', icon: faPhone },
+  { href: 'https://telegram.me/anna_aslamova', icon: faTelegram },
+  { href: 'https://www.linkedin.com/in/anna-aslamova/', icon: faLinkedin },
+  { href: 'mailto:anna@notprometey.pro', icon: faEnvelopeOpen },
+  { href: 'tel:+375333456145', icon: faPhone },
 ];
 
 const CVPage = () => {
